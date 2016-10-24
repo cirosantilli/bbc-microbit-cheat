@@ -1,5 +1,5 @@
 """
-Print string to display.
+Print string to display by scrolling.
 """
 from microbit import *
 while True:
