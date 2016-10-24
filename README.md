@@ -9,3 +9,5 @@
     1.  [exit](exit.py)
     1.  [button_is_pressed](button_is_pressed.py)
     1.  [pin_is_touched](pin_is_touched.py)
+    1.  [count](count.py)
+        1.  [count_image](count_image.py)
