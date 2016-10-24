@@ -3,12 +3,12 @@ Let's see if display image uses some more efficient hardware built-in than loopi
 
 Same speed it seems.
 """
+
 from microbit import *
-imax = pow(2, 25)
-i = 0
-while i < imax:
+
+def show_binary(i):
     dig = 1
-    img = Image()
+    img = Image(5, 5)
     for x in range(5):
         for y in range(5):
             if dig & i:
@@ -18,4 +18,9 @@ while i < imax:
             img.set_pixel(x, y, val)
             dig <<= 1
     display.show(img)
+
+i = 0
+imax = pow(2, 25)
+while i < imax:
+    show_binary(i)
     i += 1
