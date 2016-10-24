@@ -14,8 +14,8 @@ from microbit import *
 
 def show_binary(i):
     dig = 1
-    for x in range(5):
-        for y in range(5):
+    for y in range(5):
+        for x in range(5):
             if dig & i:
                 val = 9
             else:
